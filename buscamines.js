@@ -1,6 +1,3 @@
-var matrix = null;
-var minesArray = null;
-var mines = 8;
 
 function inicialitzaJoc() {
     let body = document.getElementsByTagName("body")[0];
@@ -9,8 +6,12 @@ function inicialitzaJoc() {
     //Elements taula
     let Taula = document.createElement("table");
     Taula.style.width = "33%";
-    Taula.style.border = "1";
+    Taula.style.border = "1px solid black";
+    Taula.style.padding = "2px";
+    Taula.style.marginTop = "5px";
+
     let TaulaBody = document.createElement("tbody");
+    TaulaBody.style.border = "1px solid black";
 
     if (document.getElementsByTagName("table").length!=0){
         //Es borra aquest element
@@ -26,19 +27,14 @@ function inicialitzaJoc() {
             let td = document.createElement("td");
             td.innerHTML = "&nbsp";
             td.style.border = "1px solid black";
-            td.style.background = "lightgrey";
             row.appendChild(td);
         }
         TaulaBody.appendChild(row);
-       
     }
 
     Taula.appendChild(TaulaBody);
     div.appendChild(Taula)
-    body.appendChild(div);
-    
-    matrix = matriuBinaria()
-    
+    body.appendChild(div);    
 }
 
 function matriuBinaria(matrix) {
@@ -57,9 +53,3 @@ function matriuBinaria(matrix) {
     }
     return matrix2;
 }
-
-
-let a = [];
-a.push(3);
-// a
-// [3]
