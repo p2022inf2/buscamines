@@ -1,22 +1,32 @@
+var matrix = null;
+var minesArray = null;
+var mines = 8;
+
 function inicialitzaJoc() {
-    var body = document.getElementsByTagName("body")[0];
-    var div = document.createElement("div");
+    let body = document.getElementsByTagName("body")[0];
+    let div = document.createElement("div");
 
     //Elements taula
-    var Taula = document.createElement("table");
+    let Taula = document.createElement("table");
     Taula.style.width = "33%";
     Taula.style.border = "1";
-    var TaulaBody = document.createElement("tbody");
+    let TaulaBody = document.createElement("tbody");
 
-    for (var j = 0; j < document.getElementById("row").value; j++) {
+    if (document.getElementsByTagName("table").length!=0){
+        //Es borra aquest element
+        document.getElementsByTagName("table")[0].remove();
+    }
+
+    for (let j = 0; j < document.getElementById("row").value; j++) {
         // Craecio row's de la taula
-        var row = document.createElement("tr");
+        let row = document.createElement("tr");
 
-        for (var i = 0; i < document.getElementById("td").value; i++) {
+        for (let i = 0; i < document.getElementById("td").value; i++) {
             // Creacio cel·les de la taula
-            var td = document.createElement("td");
+            let td = document.createElement("td");
             td.innerHTML = "&nbsp";
             td.style.border = "1px solid black";
+            td.style.background = "lightgrey";
             row.appendChild(td);
         }
         TaulaBody.appendChild(row);
@@ -24,22 +34,32 @@ function inicialitzaJoc() {
     }
 
     Taula.appendChild(TaulaBody);
-    body.appendChild(Taula);
+    div.appendChild(Taula)
+    body.appendChild(div);
     
+    matrix = matriuBinaria()
     
 }
 
 function matriuBinaria(matrix) {
-    var matrix2 = [];
+    let matrix2 =[];
     for (var i = 0; i < matrix.length; i++) {
+        let fila=[];
         for (var j = 0; j < matrix[0].length; j++) {
+           if (matrix[i][j].style.backgroundColor == "red"){
+            fila.push(1);
+           }
+           else{
+            fila.push(0);
+           }
         }
+        matrix2.push(fila);
     }
     return matrix2;
 }
 
-var a = [];
+
+let a = [];
 a.push(3);
 // a
 // [3]
-
