@@ -1,4 +1,6 @@
-Ara volem que quan premis una cel·la et mostri les cel·les del voltant amb el número de mines que tenen.
+# Pescamines - veïns
+
+Volem que quan premis una cel·la et mostri les cel·les del voltant amb el número de mines que tenen.
 
 # Exercici 1
 Feu que quan es premi una cel·la surti el número de mines del voltant (a dins de la mateixa cel·la)
