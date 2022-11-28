@@ -10,6 +10,8 @@ Feu servir la funció `setInterval` i els mètodes de `Date`
 Quan es guanyi el joc volem que demani un nom i desi a una taula la seva puntuació.
 
 
+# Puntuació, segona part
+
 Hem afegit una taula de puntuacions, però es perd cada cop que tanquem la pestanya.
 Necessitem desar aquesta informació de manera permanent.
 
@@ -56,6 +58,7 @@ la informació desada amb localStorage es desa *només al client* i no s'envia m
 Tant les galetes com el localStorage es desen per *cada pàgina web*.
 
 # Exercici 3
+
 Fes que la informació de puntuació es desi de manera permanent fent servir localStorage.
 
 
