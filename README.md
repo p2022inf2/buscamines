@@ -58,6 +58,9 @@ Tant les galetes com el localStorage es desen per *cada pàgina web*.
 # Exercici 3
 Fes que la informació de puntuació es desi de manera permanent fent servir localStorage.
 
+
+# Extres
+
 Per acabar afegirem alguna funcionalitat extra al joc.
 
 Tenim les següents opcions:
@@ -97,3 +100,20 @@ Afegeix uns botons per desfer i refer els moviments.
 
 
 Feu servir aquest Pescamines de [referència](https://www.chiark.greenend.org.uk/~sgtatham/puzzles/js/mines.html)
+
+
+# Puntuació
+
+La puntuació serà la següent:
+
+Funcionalitats implementades correctament (*5 punts*):
+
+- Es crea el taulell: 0.6666 punts
+- Es posen mines: 0.6666 punts
+- Es poden destapar les cel·les: 1.5 punts
+- Es pot guanyar i perdre: 0.6666 punts
+- Es puntua el joc i es desen les puntuacions: 1.5 punts
+
+*2 punts* reservats per puntuar la implementació.
+Fins a *4 punts* de funcionalitats extres.
+
