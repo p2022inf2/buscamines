@@ -13,7 +13,7 @@ Quan es guanyi el joc volem que demani un nom i desi a una taula la seva puntuac
 # Puntuació, segona part
 
 Hem afegit una taula de puntuacions, però es perd cada cop que tanquem la pestanya.
-Necessitem desar aquesta informació de manera permanent.
+Cal desar aquesta informació de manera permanent.
 
 El navegador ens proporciona 2 funcionalitats principals per a fer-ho:
 
