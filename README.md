@@ -1,41 +1,14 @@
-Els propers exercicis tenen la finalitat de guiar-vos per acabar creant el joc del pescamines.
+# Pescamines - veïns
 
-Començarem creant **l'àrea de joc** de manera dinàmica.
-
-Necessitem:
-
--  un **botó** que creï el "taulell" 
-- 2 **inputs** que indiquin les dimensions de l'àrea de joc.
-- 1 **div** que contingui el taulell.
-
-Fins ara hem estat fent servir funcions que accedien i modificaven elements. Ara necessitarem funcions per afegir nous elements al **DOM**.
-
-Consulteu les funcions [createElement](https://www.w3schools.com/jsref/met_document_createelement.asp) i [appendChild](https://www.w3schools.com/jsref/met_node_appendchild.asp)
-
+Volem que quan premis una cel·la et mostri les cel·les del voltant amb el número de mines que tenen.
 
 # Exercici 1
-Crea una funció anomenada `inicialitzaJoc` associada amb un botó; de tal manera que quan premis el botó es creï una taula amb les dimensions especificades en els inputs.
+Feu que quan es premi una cel·la surti el número de mines del voltant (a dins de la mateixa cel·la)
+
+Podeu feu servir les funcions de la UF1 que calculaven el nombre de veïns
 
 # Exercici 2
-~~~
-function matriuBinaria(matrix) {
-    var matrix2 =[];
-    for (var i = 0; i < matrix.length; i++) {
-        for (var j = 0; j < matrix[0].length; j++) {
-        }
-    }
-    return matrix2;
-}
-~~~
+Feu que quan es premi la cel·la es destapin les cel·les del voltant amb el seu número.
 
-Completeu la següent funció de manera que creï una matriu binària (amb 1's i 0's) a partir de la matriu de la taula html.
 
-És a dir hem de passar de tenir una matriu d'elements html a una matriu de números on els 1 són les posicions que tenien el color "red" i 0 la resta.
-
-Experimenteu amb el mètode push dels arrays:
-~~~
-var a = [];
-a.push(3);
-// a
-// [3]
-~~~
+És recomanat fer servir una variable global que sigui una matriu amb el nombre de mines a cada posició.
